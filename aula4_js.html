@@ -13,8 +13,8 @@
         let letra = prompt('Digite uma letra do alfabeto:');
         let naoEhNumero = isNaN(letra);
 
-        if (naoEhNumero == false) {
-            alert('Digite uma vogal');
+        if (naoEhNumero == false || letra.length > 1) {
+            alert('Você digitou um número ou mais que uma letra. Por favor, recarregue a página e tente novamente.');
         }
         else if (letra == "a" || letra == "e" || letra == "i" || letra =="o" || letra == "u") {
             console.log('Letra digitada é uma vogal');
