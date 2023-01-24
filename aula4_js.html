@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio da aula 4 de JS</title>
+</head>
+<body>
+    
+
+    <script>
+        let letra = prompt('Digite uma letra do alfabeto:');
+        let naoEhNumero = isNaN(letra);
+
+        if (naoEhNumero == false) {
+            alert('Digite uma vogal');
+        }
+        else if (letra == "a" || letra == "e" || letra == "i" || letra =="o" || letra == "u") {
+            console.log('Letra digitada é uma vogal');
+        } else {
+            console.log('Letra digitada é uma consoante');
+        }
+    </script>
+</body>
+</html>
